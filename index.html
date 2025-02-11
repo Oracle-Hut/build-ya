@@ -8,13 +8,17 @@
     <title>Хижина провидца</title>
     <script src="https://sdk.games.s3.yandex.net/sdk.js"></script>
     <script>
-        YaGames.init().then(ysdk => {
-            console.log(ysdk)
-        });
-    </script>  <script type="module" crossorigin src="./assets/index-CpaIuoCE.js"></script>
+        YaGames
+            .init()
+            .then(ysdk => {
+                console.log('Yandex SDK initialized');
+                window.ysdk = ysdk;
+            });
+    </script>
+  <script type="module" crossorigin src="./assets/index-CpaIuoCE.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/phaser-epkdELU5.js">
   <link rel="stylesheet" crossorigin href="./assets/index-tn0RQdqM.css">
-<meta name="build-id" content="650c15e4-a403-4506-a6ea-de973e001376"></head>
+<meta name="build-id" content="dcf71d22-493d-47e3-b336-d29bfaba21be"></head>
 
 <body>
     <div id="root"></div>
